@@ -1,5 +1,5 @@
-import { Direction } from "../core/types";
-import { Snake } from "../entities/Snake";
+import { Direction } from "../core/types.ts";
+import { Snake } from "../entities/Snake.ts";
 
 export class InputHandler {
   private snake: Snake;

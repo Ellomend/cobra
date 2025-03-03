@@ -1,10 +1,10 @@
-import { Position, Snake } from "../core/types";
+import { Position, Snake } from "../core/types.ts";
 import {
   CANVAS_SIZE,
   CELL_SIZE,
   GRID_SIZE,
   COLORS,
-} from "../config/gameConfig";
+} from "../config/gameConfig.ts";
 
 export class Renderer {
   private canvas: HTMLCanvasElement;

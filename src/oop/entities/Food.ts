@@ -1,5 +1,5 @@
-import { Position, Snake } from "../core/types";
-import { GRID_SIZE } from "../config/gameConfig";
+import { Position, Snake } from "../core/types.ts";
+import { GRID_SIZE } from "../config/gameConfig.ts";
 
 export class Food {
   private position: Position;

@@ -1,9 +1,9 @@
-import { GameState } from "./types";
-import { Snake } from "../entities/Snake";
-import { Food } from "../entities/Food";
-import { Renderer } from "../ui/Renderer";
-import { InputHandler } from "../ui/InputHandler";
-import { GAME_SPEED } from "../config/gameConfig";
+import { GameState } from "./types.ts";
+import { Snake } from "../entities/Snake.ts";
+import { Food } from "../entities/Food.ts";
+import { Renderer } from "../ui/Renderer.ts";
+import { InputHandler } from "../ui/InputHandler.ts";
+import { GAME_SPEED } from "../config/gameConfig.ts";
 
 export class Game {
   private snake: Snake;

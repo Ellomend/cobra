@@ -1,4 +1,4 @@
-import { Position } from "../core/types";
+import { Position } from "../core/types.ts";
 
 /**
  * Check if two positions are the same

@@ -9,7 +9,7 @@ export const initializeImplementation = (type: ImplementationType): void => {
 
   // Import and initialize the selected implementation
   if (type === "OOP") {
-    import("./core/Game").then(({ Game }) => {
+    import("./oop/core/Game").then(({ Game }) => {
       const game = new Game();
       game.start();
 

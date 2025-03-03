@@ -1,5 +1,5 @@
 import "./style.css";
-import { ImplementationType, initializeImplementation } from "./factory";
+import { initializeImplementation } from "./factory";
 
 // Create a UI for selecting the implementation
 document.addEventListener("DOMContentLoaded", () => {
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Create a selection UI
   app.innerHTML = `
     <div class="implementation-selector">
-      <h1>Snake Game</h1>
+      <h1>Cobra</h1>
       <p>Select an implementation paradigm:</p>
       <div class="buttons">
         <button id="oop-button" class="paradigm-button">Object-Oriented Programming</button>
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
       flex: 1;
       text-align: left;
       padding: 20px;
-      background-color: #f5f5f5;
+      background-color:rgb(12, 50, 61);
       border-radius: 5px;
     }
     

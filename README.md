@@ -8,11 +8,12 @@ The project is organized into two main implementations:
 
 ```
 src/
-├── core/           # OOP implementation core
-├── entities/       # OOP implementation entities
-├── ui/             # OOP implementation UI components
-├── utils/          # OOP implementation utilities
-├── config/         # OOP implementation configuration
+├── oop/            # OOP implementation
+│   ├── core/       # OOP implementation core
+│   ├── entities/   # OOP implementation entities
+│   ├── ui/         # OOP implementation UI components
+│   ├── utils/      # OOP implementation utilities
+│   └── config/     # OOP implementation configuration
 ├── functional/     # Functional implementation
 │   ├── core/       # FP core logic
 │   ├── entities/   # FP entities (conceptual)
