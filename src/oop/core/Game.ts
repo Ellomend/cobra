@@ -1,4 +1,3 @@
-import { GameState } from "./types.ts";
 import { Snake } from "../entities/Snake.ts";
 import { Food } from "../entities/Food.ts";
 import { Renderer } from "../ui/Renderer.ts";
@@ -6,7 +5,7 @@ import { InputHandler } from "../ui/InputHandler.ts";
 import { GAME_SPEED } from "../config/gameConfig.ts";
 
 export class Game {
-  private snake: Snake;
+  private readonly snake: Snake;
   private food: Food;
   private renderer: Renderer;
   private inputHandler: InputHandler;
@@ -106,17 +105,6 @@ export class Game {
 
     // Start the game loop again
     this.start();
-  }
-
-  public getState(): GameState {
-    return {
-      snake: this.snake.body,
-      food: this.food.pos,
-      direction: this.snake.currentDirection,
-      nextDirection: this.snake.currentDirection,
-      isGameOver: this.isGameOver,
-      score: this.score,
-    };
   }
 
   public cleanup(): void {

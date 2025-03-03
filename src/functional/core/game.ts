@@ -1,4 +1,4 @@
-import { GameState, Direction, Position, Snake } from "./types";
+import { GameState, Direction } from "./types";
 import { GAME_SPEED } from "../config/gameConfig";
 import {
   generateFoodPosition,

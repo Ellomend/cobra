@@ -1,4 +1,4 @@
-import { Position, Snake, Direction, GameState } from "../core/types";
+import { Position, Snake, Direction } from "../core/types";
 import { GRID_SIZE } from "../config/gameConfig";
 
 /**
@@ -12,13 +12,6 @@ export const isSamePosition = (pos1: Position, pos2: Position): boolean =>
  */
 export const getRandomInt = (min: number, max: number): number =>
   Math.floor(Math.random() * (max - min)) + min;
-
-/**
- * Format score with leading zeros
- */
-export const formatScore = (score: number, length: number = 5): string =>
-  score.toString().padStart(length, "0");
-
 /**
  * Generate a new food position that doesn't overlap with the snake
  */
@@ -88,26 +81,4 @@ export const isValidDirectionChange = (
     (currentDirection === "LEFT" && newDirection === "RIGHT") ||
     (currentDirection === "RIGHT" && newDirection === "LEFT")
   );
-};
-
-/**
- * Create a debounced function
- */
-export const debounce = <T extends (...args: any[]) => any>(
-  func: T,
-  wait: number
-): ((...args: Parameters<T>) => void) => {
-  let timeout: number | null = null;
-
-  return function (...args: Parameters<T>): void {
-    const later = () => {
-      timeout = null;
-      func(...args);
-    };
-
-    if (timeout !== null) {
-      clearTimeout(timeout);
-    }
-    timeout = window.setTimeout(later, wait);
-  };
 };

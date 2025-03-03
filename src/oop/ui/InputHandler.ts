@@ -3,7 +3,7 @@ import { Snake } from "../entities/Snake.ts";
 
 export class InputHandler {
   private snake: Snake;
-  private restartCallback: () => void;
+  private readonly restartCallback: () => void;
 
   constructor(snake: Snake, restartCallback: () => void) {
     this.snake = snake;

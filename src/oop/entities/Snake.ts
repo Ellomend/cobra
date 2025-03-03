@@ -20,10 +20,6 @@ export class Snake {
     return this.segments[0];
   }
 
-  get currentDirection(): Direction {
-    return this.direction;
-  }
-
   setDirection(newDirection: Direction): void {
     // Prevent 180-degree turns
     if (
