@@ -1,11 +1,8 @@
 import "./style.css";
-import typescriptLogo from "./typescript.svg";
-import viteLogo from "/vite.svg";
-import { setupCounter } from "./counter.ts";
 
 // Game constants
 const GRID_SIZE = 20;
-const GAME_SPEED = 100; // milliseconds
+const GAME_SPEED = 300; // milliseconds
 const CANVAS_SIZE = 400;
 const CELL_SIZE = CANVAS_SIZE / GRID_SIZE;
 
