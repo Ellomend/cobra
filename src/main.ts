@@ -111,3 +111,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+console.log("12234");
+
+const double = (n: number): number => n * 2;
+
+const lift =
+  <T, U>(fn: (x: T) => U) =>
+  (arr: T[]): U[] =>
+    arr.map(fn);
+
+const liftedDouble = lift(double);
+
+console.log(liftedDouble([1, 2, 3])); // ✅ Works: [2, 4, 6]
+console.log(liftedDouble(["1", "2", "3"])); // ❌ Error: Argument of type 'string' is not assignable to parameter of type 'number'.
