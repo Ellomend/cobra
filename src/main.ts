@@ -39,64 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
   `;
 
-  // Add some styles for the selector
-  const style = document.createElement("style");
-  style.textContent = `
-    .implementation-selector {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin: 30px 0;
-    }
-    
-    .paradigm-button {
-      padding: 15px 30px;
-      font-size: 18px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    
-    .paradigm-button:hover {
-      background-color: #3e8e41;
-    }
-    
-    .paradigm-info {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 30px;
-    }
-    
-    .info-box {
-      flex: 1;
-      text-align: left;
-      padding: 20px;
-      background-color:rgb(12, 50, 61);
-      border-radius: 5px;
-    }
-    
-    .info-box h2 {
-      margin-top: 0;
-      color: #4CAF50;
-    }
-    
-    .info-box ul {
-      padding-left: 20px;
-    }
-  `;
-  document.head.appendChild(style);
-
   // Add event listeners to the buttons
   const oopButton = document.getElementById("oop-button");
   const fpButton = document.getElementById("fp-button");
